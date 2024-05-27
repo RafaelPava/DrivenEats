@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">DrivenEats</h1>
+        <p class="texto-complementar">Sua comida em 6 minutos</p>
+    </header>
+    <main class="pagina">
+        <h2 class="subtitulos">Primeiro, seu prato</h2>
+        <div class="pagina__opcoes">
+            <div class="pagina__opcoes__opcao" id="opcao1">
+                <a onclick="selecaoComida(1)">
+                    <img src="./imgs/frango_yin_yang-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Frango Yin Yang</p>
+                <p class="texto2">Um pouco de batata, um pouco de salada</p>
+                <p class="texto3">R$ 14,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+            <div class="pagina__opcoes__opcao" id="opcao2">
+                <a onclick="selecaoComida(2)">
+                    <img src="./imgs/frango_yin_yang-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Frango Yin Yang</p>
+                <p class="texto2">Um pouco de batata, um pouco de salada</p>
+                <p class="texto3">R$ 14,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+            <div class="pagina__opcoes__opcao" id="opcao3">
+                <a onclick="selecaoComida(3)">
+                    <img src="./imgs/frango_yin_yang-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Frango Yin Yang</p>
+                <p class="texto2">Um pouco de batata, um pouco de salada</p>
+                <p class="texto3">R$ 14,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+        </div>
+        <h3 class="subtitulos">Agora, sua bebida</h3>
+        <div class="pagina__opcoes">
+            <div class="pagina__opcoes__opcao" id="opcao4">
+                <a onclick="selecaoBebida(4)">
+                    <img src="./imgs/coquinha_gelada-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Coquinha gelada</p>
+                <p class="texto2">Lata 350ml</p>
+                <p class="texto3">R$ 4,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+            <div class="pagina__opcoes__opcao" id="opcao5">
+                <a onclick="selecaoBebida(5)">
+                    <img src="./imgs/coquinha_gelada-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Coquinha gelada</p>
+                <p class="texto2">Lata 350ml</p>
+                <p class="texto3">R$ 4,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+            <div class="pagina__opcoes__opcao" id="opcao6">
+                <a onclick="selecaoBebida(6)">
+                    <img src="./imgs/coquinha_gelada-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Coquinha gelada</p>
+                <p class="texto2">Lata 350ml</p>
+                <p class="texto3">R$ 4,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+        </div>
+        <h4 class="subtitulos">Por fim, sua sobremesa</h4>
+        <div class="pagina__opcoes">
+            <div class="pagina__opcoes__opcao" id="opcao7">
+                <a onclick="selecaoSobremesa(7)">
+                    <img src="./imgs/pudim-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Pudim</p>
+                <p class="texto2">Apenas pudim</p>
+                <p class="texto3">R$ 7,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+            <div class="pagina__opcoes__opcao" id="opcao8">
+                <a onclick="selecaoSobremesa(8)">
+                    <img src="./imgs/pudim-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Pudim</p>
+                <p class="texto2">Apenas pudim</p>
+                <p class="texto3">R$ 7,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+            <div class="pagina__opcoes__opcao" id="opcao9">
+                <a onclick="selecaoSobremesa(9)">
+                    <img src="./imgs/pudim-1.png" width="144px" height="87px">
+                </a>
+                <p class="texto1">Pudim</p>
+                <p class="texto2">Apenas pudim</p>
+                <p class="texto3">R$ 7,90 <div class="img-checkmark img-checkmark--normal"><img src="./imgs/checkmark-circle-1.png"></div></p>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <button id="botao" class="botao-pedido" onclick="fecharPedido()">Selecione os 3 itens <br> para fechar o pedido</button>
+        <div class="fechar-pedido fechar-pedido--escondido">
+            <p class="texto4">Confirme seu pedido</p>
+            <div class="fechar-pedido__itens">
+                <div class="fechar-pedido__prato">
+                    <p class="texto5">Frango Yin Yang</p>
+                    <p class="texto5">14,90</p>
+                </div>
+                <div class="fechar-pedido__bebida">
+                    <p class="texto5">Coquinha gelada</p>
+                    <p class="texto5">4,90</p>
+                </div>
+                <div class="fechar-pedido__sobremesa"> 
+                    <p class="texto5">Pudim</p>
+                    <p class="texto5">7,90</p>
+                </div>
+                <div class="fechar-pedido__total">
+                    <p class="texto4 total">Total</p>
+                    <p class="texto5">R$ 27,70</p>
+                </div>
+            </div>
+            <button class="confirmar-pedido">Tudo certo, pode pedir!</button>
+            <a class="cancelar" onclick="cancelar()">Cancelar</a>
+        </div>
+    </footer>
+</body>
+</html>

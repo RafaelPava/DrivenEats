@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.body--fechar-pedido{
+    background-color: #EEEEEE;
+}
+
+.titulo{
+ font-family: 'Righteous', sans-serif;
+ font-size: 44px;
+ font-weight: 400;
+ color: #FFFFFF;
+}
+
+.subtitulos{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.texto-complementar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.texto1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.texto2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: #A6A6A6;
+}
+
+.texto3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.texto5{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.cabecalho{
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 2px 20px;
+}
+
+.pagina{
+    background-color: #EEEEEE;
+    width: 414px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.pagina__opcoes{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.pagina__opcoes__opcao{
+    background-color: #FFFFFF;
+    width: 172px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px 5px 5px;
+    justify-content: space-around;
+    border-radius: 9px;
+}
+
+.img-checkmark--normal{
+    display: none;
+}
+
+.pagina__opcoes__opcao--selecionado{
+    border: 5px solid #32B72F;
+    width: 160px;
+    height: 204px;
+}
+
+.rodape{
+    background-color: #FFFFFF;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.botao-pedido{
+    border-radius: 50px;
+    width: 364px;
+    height: 61px;
+    background-color: #CBCBCB;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.botao-pedido--pronto{
+    background-color: #32B72F;
+}
+
+.fechar-pedido{
+    position: absolute;
+    align-self: center;
+    background-color: #50D074;
+    width: 377px;
+    height: 353px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fechar-pedido--escondido{
+    display: none;
+}
+
+.fechar-pedido__itens{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fechar-pedido__prato{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fechar-pedido__bebida{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fechar-pedido__sobremesa{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fechar-pedido__total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmar-pedido{
+    border-radius: 100px;
+    width: 329px;
+    height: 52px;
+    background-color: #FFFFFF;
+    color: #50D074;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.cancelar{
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}

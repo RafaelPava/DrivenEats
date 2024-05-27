@@ -62,11 +62,13 @@ function selecaoSobremesa(id){
     }
 }
 
-if(document.getElementById('opcao1').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao2').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao3').classList.contains('pagina__opcoes__opcao--selecionado')){
-    if(document.getElementById('opcao4').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao5').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao6').classList.contains('pagina__opcoes__opcao--selecionado')){
-        if(document.getElementById('opcao7').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao8').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao9').classList.contains('pagina__opcoes__opcao--selecionado')){
-            document.getElementById('botao').textContent = 'Fechar pedido';
-            document.getElementById('botao').classList.add('botao-pedido--pronto');
+function pedidoPronto(){
+    if(document.getElementById('opcao1').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao2').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao3').classList.contains('pagina__opcoes__opcao--selecionado')){
+        if(document.getElementById('opcao4').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao5').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao6').classList.contains('pagina__opcoes__opcao--selecionado')){
+            if(document.getElementById('opcao7').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao8').classList.contains('pagina__opcoes__opcao--selecionado') || document.getElementById('opcao9').classList.contains('pagina__opcoes__opcao--selecionado')){
+                document.getElementById('botao').textContent = 'Fechar pedido';
+                document.getElementById('botao').classList.add('botao-pedido--pronto');
+            }
         }
     }
 }
